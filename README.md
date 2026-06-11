@@ -4,7 +4,7 @@
 
 In this lab, you will develop a JavaScript project that involves building and iterating over nested objects and arrays. This lab will help you develop foundational skills in Object Iteration, Array Iteration, and Array Looping by implementing functions to extract data from complex objects. You’ll use these techniques to build out several small functions that access and manipulate data for a fictional basketball game stats tracker.
 
-Pre-written test cases are provided in `indexTest.js`, and your task is to implement the required functions in `index.js` to ensure all tests pass when run locally using Jest.
+Pre-written test cases are provided in `indexTest.js`, and your task is to implement the required functions in `index.js` to ensure all tests pass when run locally using Mocha and Chai.
 
 ---
 
@@ -18,7 +18,7 @@ You are a developer working for a sports tech company. Your current project is t
 
 - **Code Editor**: Visual Studio Code (or your preferred editor)
 - **Node.js**: To execute JavaScript locally
-- **Jest**: For running test cases
+- **Mocha and Chai**: For running test cases
 
 ---
 
@@ -98,15 +98,13 @@ To ensure your implementation is correct, pre-written tests are provided in `ind
 
 ---
 
-### 4. Analyze Code Quality Using ESLint
+### 4. Analyze Code Quality
 
-Run ESLint to ensure your code adheres to best practices:
+Look over your code for any code that isn't DRY.
 
-```bash
-npx eslint index.js
-```
+Ensure all functions and variables are named appropriately and are readable.
 
-Fix any issues reported and refactor your code for readability and maintainability.
+Comment on any code that isn't easily understood by reading it.
 
 ---
 
@@ -147,8 +145,8 @@ describe('Basketball Stats', function () {
 Your grade will be determined based on your ability to pass all the provided test cases and the quality of your code. Make sure you have:
 
 - Successfully implemented all required functions.
-- Passed all test cases in `indexTest.js` using Jest.
-- Ensured your code is clean, modular, and adheres to best practices by running ESLint.
+- Passed all test cases in `indexTest.js` using `npm test`.
+- Ensured your code is clean, modular, and adheres to best practices.
 
 ## Final Tips
 
@@ -160,7 +158,6 @@ Your grade will be determined based on your ability to pass all the provided tes
 
 ## Resources
 
-- [Jest Documentation](https://jestjs.io/)
-- [ESLint Documentation](https://eslint.org/)
+- [Mocha Documentation](https://mochajs.org/)
 - [Chai Documentation](https://www.chaijs.com/)
 - [Sinon Documentation](https://sinonjs.org/)
