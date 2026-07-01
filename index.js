@@ -248,27 +248,14 @@ function doesLongNameStealATon() {
   return longestNamePlayer === stealsLeader;
 }
 
-// ===== Console.log tests =====
-
-// 3.1 Retrieve Player Information
-console.log("numPointsScored:", numPointsScored("Alan Anderson")); // expect 22
-console.log("shoeSize:", shoeSize("Brook Lopez")); // expect 17
-
-// 3.2 Retrieve Team Information
-console.log("teamColors:", teamColors("Brooklyn Nets")); // expect ["Black", "White"]
-console.log("teamNames:", teamNames()); // expect ["Brooklyn Nets", "Charlotte Hornets"]
-
-// 3.3 Retrieve Player Numbers and Stats
-console.log("playerNumbers:", playerNumbers("Charlotte Hornets")); // expect [4, 0, 2, 8, 33]
-console.log("playerStats:", playerStats("Ben Gordon")); // expect full stats object
-
-// 3.4 Advanced Challenge
-console.log("bigShoeRebounds:", bigShoeRebounds()); // biggest shoe = Mason Plumlee (19) -> rebounds 12
-
-// Bonus Questions
-console.log("mostPointsScored:", mostPointsScored()); // expect "Ben Gordon" (33 points)
-console.log("winningTeam:", winningTeam()); // compares total points, home vs away
-console.log("playerWithLongestName:", playerWithLongestName()); // expect "Bismack Biyombo" or "Brendan Haywood" (tie-check below)
-
-// Super Bonus Challenge
-console.log("doesLongNameStealATon:", doesLongNameStealATon()); // true or false
+console.log("numPointsScored:", numPointsScored("Alan Anderson"))
+console.log("shoeSize:", shoeSize("Brook Lopez"))
+console.log("teamColors:", teamColors("Brooklyn Nets"))
+console.log("teamNames:", teamNames())
+console.log("playerNumbers:", playerNumbers("Charlotte Hornets"))
+console.log("playerStats:", playerStats("Ben Gordon"))
+console.log("bigShoeRebounds:", bigShoeRebounds())
+console.log("mostPointsScored:", mostPointsScored())
+console.log("winningTeam:", winningTeam())
+console.log("playerWithLongestName:", playerWithLongestName())
+console.log("doesLongNameStealATon:", doesLongNameStealATon()) 
