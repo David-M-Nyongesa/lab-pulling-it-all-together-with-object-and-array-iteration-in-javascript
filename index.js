@@ -142,7 +142,6 @@ function teamNames() {
   return [data.home.teamName, data.away.teamName];
 }
 
-
 function playerNumbers(teamName) {
   const data = gameObject();
   for (const teamKey of ["home", "away"]) {
@@ -160,7 +159,6 @@ function playerStats(playerName) {
   }
 }
 
-
 function bigShoeRebounds() {
   let biggestShoe = 0;
   let reboundsForBiggestShoe = 0;
@@ -177,10 +175,6 @@ function bigShoeRebounds() {
   }
   return reboundsForBiggestShoe;
 }
-
-
-
-
 
 function mostPointsScored() {
   let topScorer = "";
@@ -224,9 +218,6 @@ function playerWithLongestName() {
   }
   return longestName;
 }
-
-
-
 
 
 function doesLongNameStealATon() {
