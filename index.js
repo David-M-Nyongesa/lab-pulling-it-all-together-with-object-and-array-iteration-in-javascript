@@ -115,15 +115,16 @@ function gameObject() {
     };
 }
 const data = gameObject();
+const array = ["home", "away"];
 function numPointsScored(playerName) {
-  for (const teamKey of ["home", "away"]) {
+  for (const teamKey of array) {
     const players = data[teamKey].players;
     if (players[playerName]) return players[playerName].points;
   }
 }
 
 function shoeSize(playerName) {
-  for (const teamKey of ["home", "away"]) {
+  for (const teamKey of array) {
     const players = data[teamKey].players;
     if (players[playerName]) return players[playerName].shoe;
   }
@@ -131,7 +132,7 @@ function shoeSize(playerName) {
 
 
 function teamColors(teamName) {
-  for (const teamKey of ["home", "away"]) {
+  for (const teamKey of array) {
     if (data[teamKey].teamName === teamName) {
       return data[teamKey].colors;
     }
@@ -143,8 +144,7 @@ function teamNames() {
 }
 
 function playerNumbers(teamName) {
-  const data = gameObject();
-  for (const teamKey of ["home", "away"]) {
+  for (const teamKey of array) {
     if (data[teamKey].teamName === teamName) {
       const players = data[teamKey].players;
       return Object.values(players).map((p) => p.number);
@@ -153,7 +153,7 @@ function playerNumbers(teamName) {
 }
 
 function playerStats(playerName) {
-  for (const teamKey of ["home", "away"]) {
+  for (const teamKey of array) {
     const players = data[teamKey].players;
     if (players[playerName]) return players[playerName];
   }
@@ -163,7 +163,7 @@ function bigShoeRebounds() {
   let biggestShoe = 0;
   let reboundsForBiggestShoe = 0;
 
-  for (const teamKey of ["home", "away"]) {
+  for (const teamKey of array) {
     const players = data[teamKey].players;
     for (const name in players) {
       const player = players[name];
@@ -176,11 +176,15 @@ function bigShoeRebounds() {
   return reboundsForBiggestShoe;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7b77eac (Reduced redundancy)
 function mostPointsScored() {
   let topScorer = "";
   let mostPoints = 0;
 
-  for (const teamKey of ["home", "away"]) {
+  for (const teamKey of array) {
     const players = data[teamKey].players;
     for (const name in players) {
       if (players[name].points > mostPoints) {
@@ -208,7 +212,7 @@ function winningTeam() {
 function playerWithLongestName() {
   let longestName = "";
 
-  for (const teamKey of ["home", "away"]) {
+  for (const teamKey of array) {
     const players = data[teamKey].players;
     for (const name in players) {
       if (name.length > longestName.length) {
@@ -219,7 +223,10 @@ function playerWithLongestName() {
   return longestName;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7b77eac (Reduced redundancy)
 function doesLongNameStealATon() {
   const longestNamePlayer = playerWithLongestName();
 
@@ -237,6 +244,7 @@ function doesLongNameStealATon() {
   }
 
   return longestNamePlayer === stealsLeader;
+<<<<<<< HEAD
 }
 
 console.log("numPointsScored:", numPointsScored("Alan Anderson"))
@@ -250,3 +258,6 @@ console.log("mostPointsScored:", mostPointsScored())
 console.log("winningTeam:", winningTeam())
 console.log("playerWithLongestName:", playerWithLongestName())
 console.log("doesLongNameStealATon:", doesLongNameStealATon()) 
+=======
+}
+>>>>>>> 7b77eac (Reduced redundancy)
