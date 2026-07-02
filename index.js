@@ -116,6 +116,7 @@ function gameObject() {
 }
 const data = gameObject();
 const array = ["home", "away"];
+
 function numPointsScored(playerName) {
   for (const teamKey of array) {
     const players = data[teamKey].players;
@@ -175,11 +176,6 @@ function bigShoeRebounds() {
   }
   return reboundsForBiggestShoe;
 }
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 7b77eac (Reduced redundancy)
 function mostPointsScored() {
   let topScorer = "";
   let mostPoints = 0;
@@ -223,10 +219,6 @@ function playerWithLongestName() {
   return longestName;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 7b77eac (Reduced redundancy)
 function doesLongNameStealATon() {
   const longestNamePlayer = playerWithLongestName();
 
@@ -244,20 +236,3 @@ function doesLongNameStealATon() {
   }
 
   return longestNamePlayer === stealsLeader;
-<<<<<<< HEAD
-}
-
-console.log("numPointsScored:", numPointsScored("Alan Anderson"))
-console.log("shoeSize:", shoeSize("Brook Lopez"))
-console.log("teamColors:", teamColors("Brooklyn Nets"))
-console.log("teamNames:", teamNames())
-console.log("playerNumbers:", playerNumbers("Charlotte Hornets"))
-console.log("playerStats:", playerStats("Ben Gordon"))
-console.log("bigShoeRebounds:", bigShoeRebounds())
-console.log("mostPointsScored:", mostPointsScored())
-console.log("winningTeam:", winningTeam())
-console.log("playerWithLongestName:", playerWithLongestName())
-console.log("doesLongNameStealATon:", doesLongNameStealATon()) 
-=======
-}
->>>>>>> 7b77eac (Reduced redundancy)
